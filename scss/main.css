@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(/Assets/bg-pattern-top.svg), url(/Assets/bg-pattern-bottom.svg);
+  background-position: -200px -50vh, 48vw 50vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.img-top {
+  position: absolute;
+  top: -500px;
+  left: -500px;
+  z-index: -100;
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: -500px;
+  right: -500px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 350px;
+  max-width: 90vw;
+  height: 375px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.img-header {
+  position: absolute;
+  top: 0;
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12rem;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p,
+.card-header h2 span,
+.card-footer p {
+  font-weight: 400;
+  color: #969696;
+}
+
+.img-container {
+  position: absolute;
+  top: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  padding: 5px;
+}
+
+.img-profile {
+  border-radius: 50%;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.card-footer h2 {
+  margin-bottom: 5px;
+}
+
+hr.solid {
+  border-top: 2px solid #969696;
+  margin: 1.5rem 0;
+}
+/*# sourceMappingURL=main.css.map */

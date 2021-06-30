@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// Variable CSS
+$primary-color: hsl(185, 75%, 39%);
+$secondary-color: hsl(0, 0%, 59%);
+
+$text-font-size: 18px;
+$font-weight-md: 400;
+$font-weight-lg: 700;
+
+$font-family-primary: "Kumbh Sans", sans-serif;
+
+// CSS Style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: $font-family-primary;
+  background-image: url(/Assets/bg-pattern-top.svg),
+    url(/Assets/bg-pattern-bottom.svg);
+  background-position: -200px -50vh, 48vw 50vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.img-top {
+  position: absolute;
+  top: -500px;
+  left: -500px;
+  z-index: -100;
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: -500px;
+  right: -500px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  max-width: 90vw;
+  height: 375px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.img-header {
+  position: absolute;
+  top: 0;
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+}
+
+.card-header {
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.card-header h2 {
+  font-size: $text-font-size;
+  font-weight: $font-weight-lg;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p,
+.card-header h2 span,
+.card-footer p {
+  font-weight: $font-weight-md;
+  color: $secondary-color;
+}
+
+.img-container {
+  position: absolute;
+  top: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  padding: 5px;
+}
+
+.img-profile {
+  border-radius: 50%;
+}
+
+.card-footer {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.card-footer h2 {
+  margin-bottom: 5px;
+}
+
+// divider
+hr.solid {
+  border-top: 2px solid $secondary-color;
+  margin: 1.5rem 0;
+}
